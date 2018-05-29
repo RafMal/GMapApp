@@ -60,7 +60,22 @@ var HomePage = /** @class */ (function () {
         this.geolocation = geolocation;
     }
     HomePage.prototype.ionViewDidLoad = function () {
-        this.loadMap();
+        this.loadMapStat();
+    };
+    HomePage.prototype.loadMapStat = function () {
+        var LatLng = new google.maps.LatLng(50.222, 20.555);
+        var mapOptions = {
+            center: LatLng,
+            zoom: 13,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+        var marker = new google.maps.Marker({
+            map: this.map,
+            position: this.map.getCenter(),
+            title: "Lokalizacja",
+            animation: google.maps.Animation.DROP
+        });
     };
     HomePage.prototype.loadMap = function () {
         var _this = this;
