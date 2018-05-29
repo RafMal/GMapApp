@@ -79,7 +79,7 @@ var HomePage = /** @class */ (function () {
                 animation: google.maps.Animation.DROP
             });
         }, function (err) {
-            console.log(err);
+            document.getElementById("mapdisplay").innerHTML = "<h2>ERROR</h2><p>Błąd pobierania lokalizacji</p>";
         });
     };
     __decorate([
@@ -88,7 +88,7 @@ var HomePage = /** @class */ (function () {
     ], HomePage.prototype, "mapElement", void 0);
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="dark">\n    <ion-title>\n      Lokalizacja\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div #mapdisplay id="mapdisplay"></div>\n< /ion-content>\n'/*ion-inline-end:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="dark">\n    <ion-title>\n      Lokalizacja\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    \n  <div #mapdisplay id="mapdisplay"></div>\n\n</ion-content>\n'/*ion-inline-end:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */]) === "function" && _c || Object])
     ], HomePage);
