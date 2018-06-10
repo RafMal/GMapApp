@@ -22,7 +22,6 @@
     <platform name="android">
         <config-file target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-            <uses-feature android:name="android.hardware.location.gps" android:required="false" />
         </config-file>
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
