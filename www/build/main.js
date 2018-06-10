@@ -103,7 +103,7 @@ var HomePage = /** @class */ (function () {
     ], HomePage.prototype, "mapElement", void 0);
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="dark">\n    <ion-title>\n      Lokalizacja v2\n    </ion-title>\n      <ion-buttons end>\n         <button ion-button icon-only (click)="loadMap()"><ion-icon name="add-circle"></ion-icon></button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    \n    \n    \n  <div #mapdisplay id="mapdisplay"></div>\n\n</ion-content>\n'/*ion-inline-end:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar color="dark">\n    <ion-title>\n      Lokalizacja v2\n    </ion-title>\n      <ion-buttons end>\n         <button ion-button icon-only (click)="loadMapStat()"><ion-icon name="home"></ion-icon></button>\n         <button ion-button icon-only (click)="loadMap()"><ion-icon name="locate"></ion-icon></button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    \n    \n    \n  <div #mapdisplay id="mapdisplay"></div>\n\n</ion-content>\n'/*ion-inline-end:"c:\AndroidApp\GMapApp\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */]])
     ], HomePage);
